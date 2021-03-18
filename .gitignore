@@ -32,3 +32,4 @@ bin
 *.exe
 *.out
 *.app
+/.vs/RoboclawTest/v16
