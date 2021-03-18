@@ -2,7 +2,7 @@
 
 Enhanced version of the repository from Bartosz Meglicki (https://github.com/bmegli/roboclaw)
 
-In contrast to his code I implamented only funktions for motor positioning.
+In contrast to his code I implemented only funktions for motor positioning.
 
 It can be user for communication with [Roboclaw](https://www.basicmicro.com//) motor controllers.
 
