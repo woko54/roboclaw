@@ -1,8 +1,8 @@
 /*
- * roboclaw library implementation: https://github.com/bmegli/roboclaw
+ * roboclaw library implementation: https://github.com/woko54/roboclaw
  *
  * Copyright 2018 (C) Bartosz Meglicki <meglickib@gmail.com>
- * Copyright 2021 (C) Wolfram Köhn <wolfram.koehn@gmx.net>
+ * Copyright 2021 (C) Wolfram KÃ¶hn <wolfram.koehn@gmx.net>
  *
  * This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
