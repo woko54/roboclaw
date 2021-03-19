@@ -4,7 +4,7 @@ Enhanced version of the repository from Bartosz Meglicki (https://github.com/bme
 
 In contrast to his code I implemented only funktions for motor positioning.
 
-It can be user for communication with [Roboclaw](https://www.basicmicro.com//) motor controllers.
+It can be used for communication with [Roboclaw](https://www.basicmicro.com//) motor controllers.
 
 The manual can be downloaded here: https://downloads.basicmicro.com/docs/roboclaw_user_manual.pdf
 
