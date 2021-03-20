@@ -14,6 +14,7 @@
 
 using namespace std;
 
+#include <string>
 #include <map>
 
 // error codes returned by the functions

@@ -14,6 +14,7 @@
 #include <string.h>		// memcpy
 #include <fcntl.h>		// O_RDWR file open flag
 #include <assert.h>		// assert
+#include <stdexcept>
 
 #include "Roboclaw.h"
 #include "CSerial.h"
