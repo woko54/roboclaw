@@ -8,6 +8,8 @@ It can be used for communication with [Roboclaw](https://www.basicmicro.com//) m
 
 The manual can be downloaded here: https://downloads.basicmicro.com/docs/roboclaw_user_manual.pdf
 
+I feel happy about receiving comments on this project.
+
 ## Platforms 
 
 Library works on Unix platforms (e.g. Linux) It was tested with Microsoft Visual Studio coss development on a Raspberry Pi 3.
