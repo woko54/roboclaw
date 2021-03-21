@@ -439,7 +439,7 @@ bool CRoboclaw::readConfigFile(void) {
 			auto key = line.substr(0, delimiterPos);
 			transform(key.begin(), key.end(), key.begin(), ::tolower);	// convert key to lowercase
 			auto value = line.substr(delimiterPos + 1);
-			m_config_map.insert(make_pair(key, value));
+			m_config_map[key] = value;
 		}
 		cFile.close();
 		return true;
@@ -495,10 +495,10 @@ bool CRoboclaw::parseXMLFile(void) {
 					if (line.find(pattern) != string::npos)	// all lines done 
 						break;
 					string newkey = key + to_string(i++);
-					m_config_map.insert(make_pair(newkey, getValue(line)));
+					m_config_map[newkey] = getValue(line);
 				}
 			} else { // all in single line
-				m_config_map.insert(make_pair(key, getValue(line)));
+				m_config_map[key] = getValue(line);
 			}
 		}
 	}
