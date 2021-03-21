@@ -17,6 +17,7 @@ The project-file is included.
 
 It should work out the of box with a Raspberry running PiOS.
 For Ubuntu this has to be done:
+- 'sudo apt-get install build-essential gdb'
 - remove 'console=serial0,115200' from '/boot/firmware/cmdline.txt' to get rid of the getty-process that by default is using the UART.
 - for debugging change the method from 'gdb' to 'gdbserver'.
 
