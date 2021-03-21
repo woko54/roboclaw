@@ -18,11 +18,11 @@ The project-file is included.
 It should work out the of box with a Raspberry running PiOS.
 For Ubuntu this has to be done:
 - remove 'console=serial0,115200' from '/boot/firmware/cmdline.txt' to get rid of the getty-process that by default is using the UART.
-- for debugging change the method from 'gdb' to 'gdbserver'
+- for debugging change the method from 'gdb' to 'gdbserver'.
 
 ## Hardware
 
-You need to connect Roboclaw (or multiple Roboclaws) via USB or uart
+You need to connect Roboclaw (or multiple Roboclaws) via USB or UART.
 
 ## Why another library
 
