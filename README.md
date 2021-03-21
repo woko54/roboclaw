@@ -15,7 +15,10 @@ I feel happy about receiving comments on this project.
 Library works on Unix platforms (e.g. Linux) It was tested with Microsoft Visual Studio coss development on a Raspberry Pi 3.
 The project-file is included.
 
-It should work out the of box with a Raspberry running PiOS. On Ubuntu one has to get rid of the getty-process that by default is using the UART. 
+It should work out the of box with a Raspberry running PiOS.
+For Ubuntu this has to be done:
+- remove 'console=serial0,115200' from '/boot/firmware/cmdline.txt' to get rid of the getty-process that by default is using the UART.
+- for debugging change the method from 'gdb' to 'gdbserver'
 
 ## Hardware
 
