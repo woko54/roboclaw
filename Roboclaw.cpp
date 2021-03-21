@@ -435,11 +435,10 @@ bool CRoboclaw::readConfigFile(void) {
 			line.erase(remove_if(line.begin(), line.end(), ::isspace), line.end());	// remove whitespaces
 			if (line[0] == '#' || line.empty())
 				continue;
-			auto delimiterPos = line.find("=");
-			auto key = line.substr(0, delimiterPos);
+			int delimiterPos = line.find("=");
+			string key = line.substr(0, delimiterPos);
 			transform(key.begin(), key.end(), key.begin(), ::tolower);	// convert key to lowercase
-			auto value = line.substr(delimiterPos + 1);
-			m_config_map[key] = value;
+			m_config_map[key] = line.substr(delimiterPos + 1);
 		}
 		cFile.close();
 		return true;
@@ -494,8 +493,7 @@ bool CRoboclaw::parseXMLFile(void) {
 				while (getline(xmlFile, line)) {
 					if (line.find(pattern) != string::npos)	// all lines done 
 						break;
-					string newkey = key + to_string(i++);
-					m_config_map[newkey] = getValue(line);
+					m_config_map[key + to_string(i++)] = getValue(line);
 				}
 			} else { // all in single line
 				m_config_map[key] = getValue(line);
